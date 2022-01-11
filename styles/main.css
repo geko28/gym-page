@@ -4,12 +4,33 @@
 
 html {
     min-height: 100%;
+    font-size: 0.625em;
 }
+
+@media (min-width: 100em) {
+    html {
+        font-size: 0.75em;
+    }
+}
+
+@media (min-width: 120em) {
+    html {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 140em) {
+    html {
+        font-size: 1.05em;
+    }    
+}
+
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
     min-height: 100%;
     background-color: rgb(100, 100, 100);
     background-image:
@@ -37,9 +58,27 @@ body {
         100% 25%;
 }
 
+@media (max-width: 62.5em) {
+    body {
+        background-color: rgb(226,29,60);
+        background-image: none;
+        background-attachment: initial;
+        background-repeat: initial;
+        background-position: initial;
+        background-size: initial;
+    }
+}
+
 .page {
     display: flex;
+    flex-direction: row;
     min-height: 100vh;
+}
+
+@media (max-width: 62.5em) {
+    .page {
+        flex-direction: column;
+    }
 }
 
 .main-content {
@@ -57,20 +96,20 @@ body {
 }
 
 .logo {
-    width: 275px;
-    margin-top: 15px;
-    margin-left: 15px;
+    width: 27.5rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
 }
 
 .main-offer {
-    margin: 100px 15px 100px 15px;
+    margin: 10rem 1.5rem 10rem 1.5rem;
     align-self: center;
 }
 
 .main-heading {
     margin: 0;
     letter-spacing: 0.05em;
-    font-size: 28px;
+    font-size: 2.8rem;
     font-style: italic;
     font-weight: normal;
     color: white;
@@ -83,8 +122,8 @@ body {
 
 .main-offer-price {
     display: block;
-    font-size: 120px;
-    margin-top: 18px;
+    font-size: 12rem;
+    margin-top: 1.8rem;
 }
 
 .join-today {
@@ -93,11 +132,11 @@ body {
     color: white;
     text-transform: uppercase;
     font-style: normal;
-    font-size: 24px;
+    font-size: 2.4rem;
     text-decoration: none;
     border-radius: 99999px;
-    padding: 10px 50px;
-    margin-top: 40px;
+    padding: 1.0rem 5.0rem;
+    margin-top: 4.0rem;
     letter-spacing: 0.05em;
 }
 
@@ -107,7 +146,7 @@ body {
 
 .info {
     display: block;
-    margin: 15px 0 15px 15px;
+    margin: 1.5rem 0 1.5rem 1.5rem;
     color: black;
 }
 
@@ -117,7 +156,7 @@ body {
     text-align: center;
     letter-spacing: 0.05em;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 2.8rem;
     text-transform: uppercase;
 }
 
@@ -126,5 +165,5 @@ body {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    font-size: 58px;
+    font-size: 5.8rem;
 }
