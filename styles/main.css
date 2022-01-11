@@ -61,11 +61,11 @@ body {
 @media (max-width: 62.5em) {
     body {
         background-color: rgb(226,29,60);
-        background-image: none;
+        background-image: url("../images/waves-white-cropped.svg");
         background-attachment: initial;
-        background-repeat: initial;
-        background-position: initial;
-        background-size: initial;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-size: 25vw auto;
     }
 }
 
